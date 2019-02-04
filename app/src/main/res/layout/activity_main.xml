@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_main"/>
+
+
+    <TextView
+        android:id="@+id/txt_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="14:12:00"
+        android:textColor="@color/black"
+        android:textSize="56sp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"/>
+
+    <Button
+        android:id="@+id/btn_start"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:text="@string/start_btn"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content" />
+<Button
+        android:id="@+id/btn_stop"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:text="@string/stop_btn"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/btn_restart"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:text="@string/restart_btn"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content" />
+
+
+    <Switch
+        android:checked="true"
+        android:textOff="OFF"
+        android:textOn="ON"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ToggleButton
+        android:checked="true"
+        android:clickable="true"
+        android:textOn="ON"
+        android:textOff="OFF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
